@@ -1,4 +1,4 @@
-## Projenin Kaggle linki : https://www.kaggle.com/code/zeynepuysall/carprices-ml
+ Projenin Kaggle linki : https://www.kaggle.com/code/zeynepuysall/carprices-ml
     
 # Araç Satış Veri Seti Analizi ve Makine Öğrenimi
 
