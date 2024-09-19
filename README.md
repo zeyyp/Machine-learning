@@ -1,9 +1,10 @@
-
-Araç Satış Veri Seti Analizi ve Makine Öğrenimi
+    
+# Araç Satış Veri Seti Analizi ve Makine Öğrenimi
 
 Bu proje, araç satış veri seti üzerinde çeşitli veri analizleri ve makine öğrenimi modellemeleri yapmayı amaçladım.
 
-Veri Seti Hakkında
+## Veri Seti Hakkında
+
 Veri seti, araç ve araç satışları ile ilgili çeşitli bilgileri içeriyor. Veri setindeki sütunlar:
 
 •	year: Araç model yılı
@@ -28,11 +29,11 @@ Veri seti, araç ve araç satışları ile ilgili çeşitli bilgileri içeriyor.
 
 •	saledate: Satış tarihi
 
-Adımlar
-1. Veri Seti Yükleme 
+# Adımlar
+## Veri Seti Yükleme 
 Kod başlangıcında pandas kütüphanesi kullanılarak veri seti yükledim.
 
-3. Veri Analizi
+## Veri Analizi
 İnfo(), head(), describe().T , .isna().sum() gibi fonksiyonlar kullanarak ve veri analizine başladım. Seaborn ve matplotlib kütüphaneleriyle bazı görselleştirmeler yaptım.
 
 •	En Çok Satılan Araç Tipleri: body özelliğine göre en çok satılan 10 araç tipi çubuk grafik ile gösterdim.
@@ -41,7 +42,7 @@ Kod başlangıcında pandas kütüphanesi kullanılarak veri seti yükledim.
 
 •	Korelasyon Analizi: year, condition, odometer, mmr, sellingprice özellikleri arasındaki korelasyonlar ısı haritasıyla görselleştirdim.
 
-4. Veri Ön İşleme
+## Veri Ön İşleme
 •	Gereksiz Sütunlar Kaldırma: Araç satış fiyatı üzerinde etkisinin az olduğunu düşündüğüm vin, state, seller, interior sütunları veri setinden çıkarttım.
 
 •	Eksik Değerlerin Doldurulması: sellingprice özelliği eksik olan az satır bulunuyordu onları cıkarttım ve diğer sütunlardaki  nan satırları sayısal özellikler medyan değeri ile doldurdum.
@@ -52,7 +53,7 @@ Kod başlangıcında pandas kütüphanesi kullanılarak veri seti yükledim.
 
 •	Veri setini parçalama: Veri setimi test ve train olarak parçaladım.
 
-6. Makine Öğrenimi Modelleri
+## Makine Öğrenimi Modelleri
 •	Doğrusal Regresyon: Veri seti üzerinde doğrusal regresyon modelini eğittim ve performansı hesapladım.
 
 •	Karar Ağacı Regresyonu: Karar ağacı kullanılarak bir regresyon modeli oluşturdum ve test verileri ile performansı ölçtüm.
@@ -63,7 +64,7 @@ Kod başlangıcında pandas kütüphanesi kullanılarak veri seti yükledim.
 
 •	Cross validation ile daha doğru bir sonuç almayı hedefledim.
 
-8. Sonuçlar
+## Sonuçlar
 •	Her bir modelin performansı (R² skoru, doğruluk skoru vb.) ayrıntılı olarak raporladım.
 
 •	Linear regresyon modeli en yüksek scor alınan model olur ve  MSE, R² skorları hesapladım
